@@ -69,7 +69,7 @@ load.remove(5000);
 
 
 let main=document.querySelector("#main");
-
+main.style.opacity="1";
 
 
 if(data["login"]===undefined){
