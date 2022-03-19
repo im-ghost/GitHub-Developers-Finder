@@ -15,7 +15,10 @@ border-radius:10px;
 height:2.5em;
 
 align-items:center;
-
+align-self:flex-start;
+}
+body{
+background-image:linear-gradient(45deg,#898989 50%,#999999,grey);
 }
 .img{
 	margin-top:1em;
@@ -97,6 +100,7 @@ backdrop-filter:blur(5px);
 width:60%;
 height:60vh;
 font-size:22px;
+opacity:0;
 }
 body{
 width:100%;
