@@ -46,7 +46,11 @@ fetch(url)
 
 
 
-
+let load=new Loader();
+load.start();
+load.addText("Peculiar GitHub developers finder","0.3em");
+load.animateText();
+load.remove(5000);
 
 .then(response => response.json()).then(data =>{ console.log(data);
 
