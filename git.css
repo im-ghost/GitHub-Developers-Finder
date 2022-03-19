@@ -71,8 +71,6 @@ grid-template-columns:auto auto;
 }
 .grid_2{
 display:grid;
-
-width:17em;
 text-align:center;
 color:inherit;
 grid-template-columns:auto auto auto;
@@ -98,7 +96,7 @@ backdrop-filter:blur(5px);
     -4px -4px 5px rgba(250,250,250,.3), inset 6px 6px 6px rgba(225,225,225,.3), inset -6px -6px 6px rgba(224,224,224,.3);
 width:60%;
 height:60vh;
-
+font-size:22px;
 }
 body{
 width:100%;
