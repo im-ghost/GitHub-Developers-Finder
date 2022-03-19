@@ -18,7 +18,7 @@ align-items:center;
 align-self:flex-start;
 }
 body{
-background-image:linear-gradient(45deg,#898989 50%,#999999 50%);
+background-image:linear-gradient(45deg,#898989 50%,#454851 50%);
 }
 .img{
 	margin-top:1em;
@@ -102,6 +102,9 @@ height:60vh;
 font-size:22px;
 opacity:0;
 transition:all 2s;
+margin:1em;
+padding:0.6em;
+line-height:120%;
 }
 body{
 width:100%;
