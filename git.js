@@ -27,22 +27,24 @@ fetch(ur).then(response=>response.json()).then(data=>{
 main.innerHTML="Sorry this user doesn't exit";
 }
 else{
-    alert("good")
+    
     search_input.value="";
    first_view.innerHTML="";
    second_view.innerHTML="";
     first_view.style=`
 `;
+let image_div=document.createElement("div");
 let img=document.createElement("img");
 img.src=data["avatar_url"];
 img.classList.add("img")
-first_view.appendChild(img);
-    let user_name=create("h3",data["login"],"user_name","user_name",first_view);
+image_div.appendChild(img);
+first_view.appendChild(image_div);
+    let user_name=create("div",`<h3>${data["login"]}</h3>`,"user_name","user_name",first_view);
    
     
 
     let goToProfile=document.createElement("div");
-    goToProfile.innerHTML="<h5>Profile<i class='fa fa-arrow-right'></i></h5>";
+    goToProfile.innerHTML="<div><h5>Profile<i class='fa fa-arrow-right'></i></h5></div>";
     goToProfile.classList.add("goto");
     goToProfile.setAttribute("id","goto");
 
