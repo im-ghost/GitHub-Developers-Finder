@@ -59,13 +59,14 @@ second_view.addEventListener("click",()=>{
 
 }
 //for back
+let backview_1=document.createElement("div");
 let userimg=document.createElement("img");
 userimg.src=data["avatar_url"];
 userimg.classList.add("image")
-second_view.appendChild(userimg);
-let user_name2=create("h5",data["login"],"user_name","user_name",second_view);
-
-let bio=create("h6",data["bio"],"bio","bio",second_view);
+backview_1.appendChild(userimg);
+let user_name2=create("h5",data["login"],"user_name","user_name",backview_1);
+let backview_2=document.createElement("div");
+let bio=create("h6",data["bio"],"bio","bio",backview_2);
 let influence=document.createElement("div");
 influence.innerHTML=`
 
@@ -170,7 +171,7 @@ second_view.appendChild(others);
 
 };
 search.addEventListener("click",()=>{
-        getUser(search_input);
+        getUser(search_input.value);
 })
 getUser("peculiar-codes");
 }
