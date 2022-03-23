@@ -27,7 +27,7 @@
 }
 body{
     
-   
+   color:var(--color);
         background-image:var(--bg3);
 }
 .first_view,.second_view{
@@ -58,7 +58,7 @@ body{
   z-index: 2;
   font-size:4em;
         display:flex;
-        flex-flow:row wrap;
+        flex-flow:column wrap;
         align-items:center;
         justify-content:center;
 }
@@ -199,7 +199,8 @@ color:inherit;
 background-color:inherit;
 text-align:center;
 cursor:pointer;
-white-space:nowrap}
+white-space:nowrap;
+}
 .btn:hover{
         box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
         
