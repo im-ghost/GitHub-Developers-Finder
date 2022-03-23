@@ -22,7 +22,7 @@ fetch(ur).then(response=>response.json()).then(data=>{
         load.animateText();
         load.remove(5000);
         load.removeOnTouch();
-        console.log(data);
+   
         if(data["login"]===undefined){
 main.innerHTML="Sorry this user doesn't exit";
 }
@@ -102,7 +102,7 @@ let modal=document.createElement("div");
 modal.classList.add("grid");
                 fetch(data["followers_url"])
                 .then(response => response.json())
-                .then(data =>{ console.log(data);
+                .then(data =>{ 
                 let followerList=document.createElement("ul");
                 followerList.innerHTML="<h4>Followers</h4>"
                 for(fol of data){  
@@ -113,7 +113,7 @@ modal.classList.add("grid");
                        fetch(data["repos_url"])
                        .then(response => response.json())
                        .then(data =>{ 
-                       console.log(data);
+                       
                        let repoList=document.createElement("ul");
                        repoList.innerHTML="<h4>Repos</h4>"
                        for(repo of data){   
